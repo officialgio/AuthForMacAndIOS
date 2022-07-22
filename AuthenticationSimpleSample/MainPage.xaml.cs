@@ -1,4 +1,5 @@
 ﻿using AuthenticationSimpleSample.Auth;
+using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
@@ -9,8 +10,10 @@ public partial class MainPage : ContentPage
 
 	public MainPage()
 	{
-		InitializeComponent();
-	}
+        InitializeComponent();
+
+        // Make sure that  resultCode == SecStatusCode.Success
+    }
 
     async void AzureADPageClicked(object sender, EventArgs args)
     {
@@ -32,5 +35,7 @@ public partial class MainPage : ContentPage
             }
         }
     }
+
+
 }
 
